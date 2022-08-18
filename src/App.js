@@ -1,5 +1,6 @@
 import './App.css';
 import Search from './components/search';
+import { GrCaretNext, GrCaretPrevious } from 'react-icons/gr'
 
 
 function App() {
@@ -20,8 +21,10 @@ function App() {
               <p>Easily access movies of all genres and have maximum enjoyment</p>
             </div>
 
-            <div className='movie_list'>
-
+            <div className='movie_list_container'>
+              <button className='movie_nav movie_nav_prev'><GrCaretPrevious /></button>
+              <div className='movie_list'></div>
+              <button className='movie_nav movie_nav_next'><GrCaretNext /></button>
             </div>
 
 

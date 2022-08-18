@@ -8,7 +8,7 @@
 
 .hero_container{
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-image: url("./images/movie_cinema_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -80,12 +80,45 @@
 .hero_content{
   margin: 40px 0px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .welcome_text{
-  height: 30vh;
+  height: 50vh;
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+/* Movie List */
+.movie_list_container{
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  box-shadow: 0px 0px 2px gray;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+
+.movie_nav{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+.movie_list{
+  margin: 0px 10px;
+  width: 100%;
+  border-radius: 8px;
 }
