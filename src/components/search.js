@@ -1,9 +1,15 @@
 import React from "react";
+import { BsSearch } from "react-icons/bs"
 
 export default function Search(){
     return (
         <div>
-            From search
+            <div className="search_container">
+                <form>
+                    <input type='text' name="search"/>
+                    <button> <BsSearch />Search</button>
+                </form>
+            </div>
         </div>
     )
 }

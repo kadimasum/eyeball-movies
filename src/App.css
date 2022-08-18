@@ -27,3 +27,40 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.search_container{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0px 0px 2px gray;
+  background-color: white;
+  border-radius: 8px;
+  width: 40vw;
+}
+
+.search_container form{
+  display: flex;
+  width: 100%;
+
+}
+
+.search_container form button{
+  margin-left: 5px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px gray;
+}
+
+.search_container form input{
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px gray;
+  width: 100%;
+}
