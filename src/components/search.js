@@ -7,7 +7,7 @@ export default function Search(){
             <div className="search_container">
                 <form>
                     <input type='text' name="search"/>
-                    <button> <BsSearch />Search</button>
+                    <button> <BsSearch /></button>
                 </form>
             </div>
         </div>

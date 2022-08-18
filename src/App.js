@@ -13,6 +13,20 @@ function App() {
             <Search />
         </div>
 
+        <div className='hero_content'>
+
+            <div className='welcome_text'>
+              <h1>Unlimited Movies For Ultimate Entertainment</h1>
+              <p>Easily access movies of all genres and have maximum enjoyment</p>
+            </div>
+
+            <div className='movie_list'>
+
+            </div>
+
+
+        </div>
+      
       </div>
 
     </div>

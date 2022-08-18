@@ -28,6 +28,16 @@
   align-items: center;
 }
 
+.logo_and_search h2{
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid white;
+  
+}
+
+
+/* Search component */
+
 .search_container{
   display: flex;
   align-items: center;
@@ -63,4 +73,19 @@
   border-radius: 8px;
   box-shadow: 0px 0px 2px gray;
   width: 100%;
+}
+
+
+/* Hero content */
+.hero_content{
+  margin: 40px 0px;
+  height: 100%;
+}
+
+.welcome_text{
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
