@@ -54,6 +54,10 @@
 
 }
 
+.search_container form input{
+  padding-left: 10px;
+}
+
 .search_container form button{
   margin-left: 5px;
   padding: 10px;

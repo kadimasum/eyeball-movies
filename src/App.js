@@ -12,6 +12,7 @@ function App() {
   const [romanticMovies, setRomanticMovies] = useState([])
   const [actionMovies, setActionMovies] = useState([])
   const [documentaries, setDocumentaryMovies] = useState([])
+  const [searchResults, setSearchResults] = useState([])
 
 
   useEffect(() =>{
@@ -39,6 +40,9 @@ function App() {
     .then(data => setDocumentaryMovies(data))
   }, [])
 
+
+
+
   return (
     <div className="hero_container">
 
@@ -46,7 +50,7 @@ function App() {
 
         <div className='logo_and_search'>
             <h2>EyeballMovies</h2>
-            <Search />
+            <Search setSearchResults={setSearchResults}/>
         </div>
 
         <div className='hero_content'>
