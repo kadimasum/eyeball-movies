@@ -104,6 +104,7 @@
   justify-content: space-between;
   align-items: center;
   height: 50vh;
+  margin-bottom: 30px;
 }
 
 .movie_nav{
@@ -116,9 +117,59 @@
   border-radius: 8px;
 }
 
+.movie_nav:hover{
+  background-color: white;
+}
+
 
 .movie_list{
-  margin: 0px 10px;
+  margin: 0px 20px;
   width: 100%;
   border-radius: 8px;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+
+.movie_wrapper{
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+  margin: 0px 10px ;
+}
+
+.movie_wrapper img{
+  width: 100%;
+  
+}
+
+.content_page{
+  width: 100%;
+  background-color: rgb(61, 24, 24);
+  margin-top: -60px;
+  padding: 20px 0px;
+}
+
+.hero_content_page_wrapper{
+  width: 90%;
+  margin: 0px auto;
+}
+
+.movielist_contennt_container{
+  margin: 0px auto;
+
+}
+
+
+.content_page h2{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.footer_container{
+  background-color: black;
+  height: 20vh;
+  width: 100%;
 }

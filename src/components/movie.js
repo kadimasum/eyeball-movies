@@ -1,10 +1,12 @@
 import React from "react";
 
 
-export default function Movie(){
-    reurn (
+export default function Movie(movie){
+    return (
         <div>
-            
+            <div className="movie_wrapper">
+                <img  src={movie.movie.Poster}/>
+            </div>
         </div>
     )
 }
