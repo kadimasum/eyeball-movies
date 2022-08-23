@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BsSearch } from "react-icons/bs"
+import { useNavigate } from "react-router-dom";
+
 
 export default function Search( { setSearchResults } ){
 
     const [ input, setInput ] = useState("")
     const [ foundMovies, setFoundMovies ] = useState([])
+    const navigate = useNavigate()
 
     const handleOnchange = (e) => {
         setInput(e.target.value)
@@ -13,7 +16,9 @@ export default function Search( { setSearchResults } ){
 
     const handleSubmit = (e) => {
         e.preventDefault() 
-        setSearchResults(foundMovies)
+        setSearchResults(foundMovies.Search)
+        navigate("/search_results")
+
     }
 
 

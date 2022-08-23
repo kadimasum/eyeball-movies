@@ -7,13 +7,14 @@ import Search  from "./search";
 
 
 
-export default function LandingPage(){
+export default function LandingPage( { props }){
     const [movies, setMovies] = useState([])
     const [romanticMovies, setRomanticMovies] = useState([])
     const [actionMovies, setActionMovies] = useState([])
     const [documentaries, setDocumentaryMovies] = useState([])
-    const [searchResults, setSearchResults] = useState([])
-  
+    const {searchResults, setSearchResults} = props
+
+   
   
     useEffect(() =>{
       fetch("http://localhost:3000/movies")
@@ -40,16 +41,7 @@ export default function LandingPage(){
       .then(data => setDocumentaryMovies(data))
     }, [])
   
-  
-    const heroContent = () => {
-      return
-    }
-  
-    const renderComponents = () => {
-      if(searchResults.length == 0){
-        heroContent()
-      }
-    }
+
   
     return (
       <div className="hero_container">
@@ -61,8 +53,6 @@ export default function LandingPage(){
               <Search setSearchResults={setSearchResults}/>
           </div>   
   
-  
-          <div className='search_results'></div>
   
           <div className='hero_content'>
   
